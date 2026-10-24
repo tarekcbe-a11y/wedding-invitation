@@ -3,75 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دعوة زفاف - أحمد بن محمد العدني</title>
+    <title>دعوة زواج - أحمد بن محمد العدني</title>
     <style>
-        body {
-            background-color: #f8f3eb;
-            font-family: 'Cairo', 'Tajawal', sans-serif;
-            color: #333;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5efe6; /* خلفية الشاشة الفاتحة والدافئة بدلاً من الأسود */
+            color: #333333;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             min-height: 100vh;
+            padding: 8px;
+        }
+        .card-container {
+            background: #f8f3eb; /* درجة لون كارت الدعوة */
+            border: 1.5px solid #d4af37;
+            border-radius: 14px;
+            max-width: 360px;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
             text-align: center;
         }
-        .container {
-            max-width: 600px;
-            width: 90%;
-            background: #fff;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            border: 2px solid #d4af37;
-        }
-        img.invite-img {
+        .img-wrapper {
             width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
+            max-height: 410px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f8f3eb;
         }
-        h1 {
-            color: #b8860b;
-            font-size: 24px;
-            margin-bottom: 10px;
+        .invitation-img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 20px;
+        .action-area {
+            padding: 12px 14px 15px 14px;
+            background: #f8f3eb;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.25);
         }
-        .map-btn {
-            display: inline-block;
-            background-color: #d4af37;
-            color: #fff;
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
+        .btn-location {
+            display: block;
+            width: 100%;
+            padding: 10px 12px;
+            background: linear-gradient(135deg, #d4af37, #aa7c11);
+            color: #000000;
             font-weight: bold;
-            font-size: 16px;
-            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
-            transition: background 0.3s ease;
+            font-size: 15px;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+            line-height: 1.4;
+            text-align: center;
         }
-        .map-btn:hover {
-            background-color: #b8860b;
+        .btn-location span {
+            display: block;
+            text-align: center;
+        }
+        .btn-text-en {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-top: 1px;
+        }
+        .btn-location:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.5);
+        }
+        .footer-note {
+            margin-top: 10px;
+            font-size: 11.5px;
+            color: #5a4b3d;
+            white-space: nowrap;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>✨ دعوة زفاف مباركة ✨</h1>
-        <p>يسعدنا حضوركم لتشريف حفل زفافنا الميمون</p>
+    <div class="card-container">
+        <!-- صورة الدعوة الفخمة -->
+        <div class="img-wrapper">
+            <img src="https://i.postimg.cc/N08NsqLg/ebb55242-d820-4ea0-9277-9c15fe071f5a.jpg" alt="بطاقة دعوة زواج" class="invitation-img">
+        </div>
         
-        <!-- الصورة الجديدة -->
-        <img src="https://i.postimg.cc/N08NsqLg/ebb55242-d820-4ea0-9277-9c15fe071f5a.jpg" alt="دعوة زفاف أحمد العدني" class="invite-img">
-        
-        <p><b>التاريخ:</b> 06 / 11 / 2026<br><b>المكان:</b> الدمام</p>
-        
-        <!-- زر موقع الحفل -->
-        <a href="https://maps.app.goo.gl/" target="_blank" class="map-btn">📍 موقع الحفل على خريطة جوجل</a>
+        <div class="action-area">
+            <!-- زر الموقع -->
+            <a href="https://maps.app.goo.gl/Lrt87ZhPtLCSS3aT8?g_st=iw" target="_blank" class="btn-location">
+                📍 اضغط هنا للوصول للموقع
+                <span class="btn-text-en">(Google Maps)</span>
+            </a>
+            
+            <!-- النص في المنتصف تماماً -->
+            <div style="text-align: center; width: 100%; margin-top: 3px;">
+                <span class="footer-note">حضوركم يسعدنا، وبمشاركتكم تكتمل أفراحنا ومسرّاتنا ✨</span>
+            </div>
+        </div>
     </div>
 
 </body>
